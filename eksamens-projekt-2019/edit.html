@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<!-- mobile friendly scalable -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- end-->
+
+<head>
+    <!-- css links -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css" media="all">
+    <link rel="stylesheet" href="grid.css" type="text/css" media="all">
+    <script src="scripts.js"> </script>
+
+    <body onload="dropdownPopulateFromDB()">
+        <div class="edit-grid-container">
+            <div class="edit-company">
+                <legend id="company-drop-down">CHOOSE YOUR COMPANY </legend>
+                <select id="dropdownCompanies" name="Default">
+                  <option value="Default">Default</option>
+                </select>
+                <button id="get-team" onclick="getTeam()">Get teams</button>
+            </div>
+            <div class="edit-teams">
+                <div class="edit-teams-listview">
+                    <legend id="team-listview-title"> Teams </legend>
+                    <ul id="team-list"></ul>
+                </div>
+                <div class="edit-go-to-create-team-button">
+                    <button id="create-team-ref" onclick="window.location='createteam.html'">Create Team</button>
+                </div>
+                <div class="edit-delete-team-button">
+                    <button id="delete-team" onclick="">Delete Team</button>
+                </div>
+            </div>
+            <div class="edit-selected-team-name">
+                <legend id="team-name-edit">Edit Team name</legend>
+                <input id="team-name" type="text"  autocomplete="off" placeholder="Choose Team Name..." onfocus="this.placeholder=''" onblur="this.placeholder='Choose Team Name...'">
+            </div>
+            <div class="edit-selected-team">
+                <div class="edit-member-name">
+                    <input id="edit-input-member-name" type="text"  autocomplete="off" placeholder="Insert member" onfocus="this.placeholder=''" onblur="this.placeholder='Choose Team Name...'">
+                </div>
+                <div class ="edit-add-member-button">
+                    <button id="edit-add-member-btn" onclick="addMemberToExistingTeam()">Add member</button>
+                </div>
+                <div class ="edit-member-list">
+                    <legend id="team-member-edit">Members</legend>
+                    <ul id="edit-team-list"></ul>
+                </div>
+                <div class ="edit-delete-member-button">
+                    <button id="edit-delete-member" onclick="removeLI()">Delete member</button>
+                </div>
+                <div class ="edit-update-button">
+                    <button id="edit-update-team" onclick="">Update Team</button>
+                </div>
+            </div>
+        </div>
+
+        <!--          -->
+        <!--          -->
+        <!--GRID START-->
+        
+        <!--GRID END-->
+        <!--        -->
+        <!--        -->
+
+        <!--              -->
+        <!--FIREBASE START-->
+        </script>
+        <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-auth.js"></script>
+        <script>
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+                apiKey: "AIzaSyDFNC5YoSqUeC7t_7_inWRBNPptXsHzDqg",
+                authDomain: "eksamen2019-1d7a6.firebaseapp.com",
+                databaseURL: "https://eksamen2019-1d7a6.firebaseio.com",
+                projectId: "eksamen2019-1d7a6",
+                storageBucket: "eksamen2019-1d7a6.appspot.com",
+                messagingSenderId: "162724010993",
+                appId: "1:162724010993:web:89058f65b637441c"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+        </script>
+        <!--FIREBASE END-->
+        <!--            -->
+    </body>
+
+</html>

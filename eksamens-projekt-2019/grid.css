@@ -1,0 +1,28 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "Left-Grid Top-Grid Top-Grid Right-Grid" 
+                         "Left-Grid Middle-Grid Middle-Grid Right-Grid" 
+                        "Left-Grid Middle-Grid Middle-Grid Right-Grid";
+  }
+  
+  .Middle-Grid { 
+      grid-area: Middle-Grid; 
+    
+    }
+  
+  .Left-Grid { 
+      grid-area: Left-Grid; 
+    
+    }
+  
+  .Top-Grid { 
+      grid-area: Top-Grid; 
+    
+    }
+  
+  .Right-Grid { 
+      grid-area: Right-Grid; 
+    
+    } 
