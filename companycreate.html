@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+ <!-- css links -->
+ <link href="https://fonts.googleapis.com/css?family=Roboto:400,600,700" rel="stylesheet">
+ <link rel="stylesheet" href="style.css" type="text/css" media="all">
+ <link rel="stylesheet" href="grid.css" type="text/css" media="all">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+ <script src="scripts.js"> </script>
+<body>
+
+    
+    <!--          -->
+    <!--          -->
+    <!--GRID START-->
+    <div class="grid-container">
+
+            <!--TOP-->
+            <div class="Top-Grid">
+              <div class="createcompany_title_div">
+                <h3>Create Company</h3>
+              </div>
+              <div class="createcompany_expla_div">
+                <form class="invite_field"> </form>
+                <legend id="add_company_title">CHOOSE A COMPANY NAME AND INVITE TEAMS </legend>
+                
+              </div>
+                
+              <!--d isplaying errors and confirmation messsages  -->
+              <div class="isa_error" id="isa_error">
+                  <i class="fa fa-times-circle"></i>
+                <p id="error_message"></p> 
+              </div>
+              <div class="isa_success" id="isa_success">
+                  <i class="fa fa-check"></i>
+                  <p id="success_message"></p>  
+              </div>
+            </div>
+            
+            <!--MIDDLE-->
+            <div class="Middle-Grid">
+      
+              <body class="Company_creation_body">
+                <div class="company_name">
+                  <form>
+                    <input id="company_name" type="text"  autocomplete="off" placeholder="Choose Company Name..." onfocus="this.placeholder=''" onblur="this.placeholder='Choose Company Name...'">
+                  </form>
+                <button id="create_company_button" onclick="createCompany()">Create Company</button>
+                
+            </div>
+      
+          </div>
+      
+          <!--LEFT-->
+          <div class="Left-Grid">
+            <div id="btnback-div" class="btnback_div"></div>
+              <button id="Companybtnback" onclick="back()">Back</button>
+            </div>
+          </div>
+      
+          <!--RIGHT-->
+          <div class="Right-Grid">
+          </div>
+      
+          </div>
+          <!--GRID END-->
+          <!--        -->
+          <!--        -->
+      
+    
+</body>
+</html>

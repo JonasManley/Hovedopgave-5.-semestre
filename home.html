@@ -1,0 +1,87 @@
+    <!DOCTYPE html>
+<html lang="en" dir="ltr">
+<!-- mobile friendly scalable -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- end-->
+
+<head>
+    <!-- css links -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css" media="all">
+    <link rel="stylesheet" href="grid.css" type="text/css" media="all">
+
+    <body>
+
+        <!--          -->
+        <!--          -->
+        <!--GRID START-->
+        <div class="grid-container">
+
+            <!--TOP-->
+            <div class="Top-Grid">
+                <!--Div for DASHBOARD START-->
+                <div class="loggedin_title_div">
+                    <h3>Welcome back </h3>
+                </div>
+                <div id="user_div" class="loggedin-div">
+                    <p id="user_para"></p>
+                </div>
+                <!--Div for nav buttons, when you're logged in-->
+                <div id="button_div" class="loggedin_btns_div">
+                    <button id="btnCreateCompany">Create Company</button>
+                    <button id="btnCreateTeam" onclick="window.location='createteam.html'">Create Team</button>
+                    <button id="btnTeamResults">Team Results</button>
+                </div>
+
+                <!--Div for DASHBOARD END-->
+            </div>
+
+            <!--MIDDLE-->
+            <div class="Middle-Grid">
+            </div>
+
+            <!--LEFT-->
+            <div class="Left-Grid">
+
+            </div>
+
+            <!--RIGHT-->
+            <div class="Right-Grid">
+                <!--Div for logout button, when you're logged in-->
+                <div id="logout_div" class="loggedin_logout_div">
+                    <button id="btnLogout" onclick="logout()">Logout</button>
+                </div>
+            </div>
+
+        </div>
+        <!--GRID END-->
+        <!--        -->
+        <!--        -->
+
+        <!--              -->
+        <!--FIREBASE START-->
+        </script>
+        <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-auth.js"></script>
+        <script>
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+                apiKey: "AIzaSyDFNC5YoSqUeC7t_7_inWRBNPptXsHzDqg",
+                authDomain: "eksamen2019-1d7a6.firebaseapp.com",
+                databaseURL: "https://eksamen2019-1d7a6.firebaseio.com",
+                projectId: "eksamen2019-1d7a6",
+                storageBucket: "eksamen2019-1d7a6.appspot.com",
+                messagingSenderId: "162724010993",
+                appId: "1:162724010993:web:89058f65b637441c"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+        </script>
+        <!--FIREBASE END-->
+        <!--            -->
+
+        <script src="login.js"> </script>
+    </body>
+
+</html>

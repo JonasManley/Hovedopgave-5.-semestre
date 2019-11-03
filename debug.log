@@ -1,0 +1,6 @@
+[0520/112440.679:ERROR:file_io.cc(134)] WriteFile: Der er ikke tilstrækkelig plads på disken. (0x70)
+[0520/112440.679:ERROR:crash_report_exception_handler.cc(111)] WriteEverything failed
+[0520/112440.679:ERROR:filesystem_win.cc(148)] DeleteFile C:\Users\Bruger\AppData\Local\Google\Chrome\User Data\Crashpad\reports\c8f0456d-2cb0-434c-a217-13f18a3efdc2.dmp: Processen kan ikke få adgang til filen, da den bruges af en anden proces. (0x20)
+[0520/112446.583:ERROR:file_io.cc(134)] WriteFile: Der er ikke tilstrækkelig plads på disken. (0x70)
+[0520/112446.583:ERROR:crash_report_exception_handler.cc(111)] WriteEverything failed
+[0520/112514.066:ERROR:file_io.cc(134)] WriteFile: Der er ikke tilstrækkelig plads på disken. (0x70)
